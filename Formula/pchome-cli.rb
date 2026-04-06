@@ -5,21 +5,21 @@
 class PchomeCli < Formula
   desc "PChome 24h CLI for search, compare, and recommendations"
   homepage "https://github.com/oliyy/pchome-cli"
-  version "0.0.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/oliyy/pchome-cli/releases/download/v0.0.1/pchome-cli_0.0.1_darwin_x86_64.tar.gz"
-      sha256 "349431aac95a7c1d73994d14d9b3715aa75395c710b698718e789973908aaf83"
+      url "https://github.com/oliyy/pchome-cli/releases/download/v0.1.0/pchome-cli_0.1.0_darwin_x86_64.tar.gz"
+      sha256 "4e1a7885217b85dfbca516d0b10ce6eb67fdfed2ab04d83a7857e88c9ccbc4fb"
 
       define_method(:install) do
         bin.install "pchome"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/oliyy/pchome-cli/releases/download/v0.0.1/pchome-cli_0.0.1_darwin_arm64.tar.gz"
-      sha256 "44246c2d65ef3836563df11e26e9d8e82456356b71bb09f118a5995913bf4490"
+      url "https://github.com/oliyy/pchome-cli/releases/download/v0.1.0/pchome-cli_0.1.0_darwin_arm64.tar.gz"
+      sha256 "a59231251584bcc73bc1a126224bf8e9e7ee266316cfdea7f64a846628216649"
 
       define_method(:install) do
         bin.install "pchome"
@@ -29,15 +29,15 @@ class PchomeCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oliyy/pchome-cli/releases/download/v0.0.1/pchome-cli_0.0.1_linux_x86_64.tar.gz"
-      sha256 "9116d15ae7e58c7b66d50082d0dc793937780bf439501decd9f57ce4e4a5216e"
+      url "https://github.com/oliyy/pchome-cli/releases/download/v0.1.0/pchome-cli_0.1.0_linux_x86_64.tar.gz"
+      sha256 "770b48fe54553e2cfa4468fdd33d4c697e7ab412142f7d525a3b030121f26155"
       define_method(:install) do
         bin.install "pchome"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/oliyy/pchome-cli/releases/download/v0.0.1/pchome-cli_0.0.1_linux_arm64.tar.gz"
-      sha256 "c131beed48ee300532bca3c88f823c2313b5f4cbdbc5ffe1850300b9698800af"
+      url "https://github.com/oliyy/pchome-cli/releases/download/v0.1.0/pchome-cli_0.1.0_linux_arm64.tar.gz"
+      sha256 "caeb30e9bc989081f3ec48c70b87cbeabba6f01b76f99d14fe5d43b57fe7580a"
       define_method(:install) do
         bin.install "pchome"
       end
